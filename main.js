@@ -11,6 +11,7 @@ const player = document.querySelector(".player-count-text");
 const computer = document.querySelector(".computer-count-text");
 const playerWins = document.querySelector(".player-wins");
 const playerLoses = document.querySelector(".player-loses");
+const changeBg = document.querySelector(".challenge-display");
 
 // mutable global variables
 let playerCount = 0;
@@ -41,6 +42,10 @@ rock.addEventListener("click", function () {
     player.innerHTML = playerCount;
     computerCount++;
     computer.innerHTML = computerCount;
+
+    // change bg to blue
+    changeBg.style.backgroundColor = "#007bff";
+    changeBg.style.border = "none";
   } else if (playerChoice === "rock" && computerChoice === "paper") {
     // computer won
     youTied.style.display = "none";
@@ -50,6 +55,10 @@ rock.addEventListener("click", function () {
     // add 1 to computer
     computerCount++;
     computer.innerHTML = computerCount;
+
+    // change bg to red
+    changeBg.style.backgroundColor = "#dc3545";
+    changeBg.style.border = "none";
   } else if (playerChoice === "rock" && computerChoice === "scissors") {
     // player won
     youTied.style.display = "none";
@@ -59,6 +68,10 @@ rock.addEventListener("click", function () {
     // add 1 to player
     playerCount++;
     player.innerHTML = playerCount;
+
+    // change bg to green
+    changeBg.style.backgroundColor = "#28a745";
+    changeBg.style.border = "none";
   }
 
   winner();
@@ -89,6 +102,10 @@ paper.addEventListener("click", function () {
     player.innerHTML = playerCount;
     computerCount++;
     computer.innerHTML = computerCount;
+
+    // change bg to blue
+    changeBg.style.backgroundColor = "#007bff";
+    changeBg.style.border = "none";
   } else if (playerChoice === "paper" && computerChoice === "rock") {
     // player won
     youTied.style.display = "none";
@@ -98,6 +115,10 @@ paper.addEventListener("click", function () {
     // add 1 to player
     playerCount++;
     player.innerHTML = playerCount;
+
+    // change bg to green
+    changeBg.style.backgroundColor = "#28a745";
+    changeBg.style.border = "none";
   } else if (playerChoice === "paper" && computerChoice === "scissors") {
     // player lost
     youTied.style.display = "none";
@@ -107,6 +128,10 @@ paper.addEventListener("click", function () {
     // add 1 to computer
     computerCount++;
     computer.innerHTML = computerCount;
+
+    // change bg to red
+    changeBg.style.backgroundColor = "#dc3545";
+    changeBg.style.border = "none";
   }
 
   winner();
@@ -137,6 +162,10 @@ scissors.addEventListener("click", function () {
     player.innerHTML = playerCount;
     computerCount++;
     computer.innerHTML = computerCount;
+
+    // change bg to blue
+    changeBg.style.backgroundColor = "#007bff";
+    changeBg.style.border = "none";
   } else if (playerChoice === "scissors" && computerChoice === "rock") {
     // player lost
     youTied.style.display = "none";
@@ -146,6 +175,10 @@ scissors.addEventListener("click", function () {
     // add 1 to computer
     computerCount++;
     computer.innerHTML = computerCount;
+
+    // change bg to red
+    changeBg.style.backgroundColor = "#dc3545";
+    changeBg.style.border = "none";
   } else if (playerChoice === "scissors" && computerChoice === "paper") {
     // player won
     youTied.style.display = "none";
@@ -155,6 +188,10 @@ scissors.addEventListener("click", function () {
     // add 1 to player
     playerCount++;
     player.innerHTML = playerCount;
+
+    // change bg to green
+    changeBg.style.backgroundColor = "#28a745";
+    changeBg.style.border = "none";
   }
 
   winner();
@@ -194,3 +231,4 @@ function winner() {
 playAgain.addEventListener("click", function () {
   location.reload();
 });
+
