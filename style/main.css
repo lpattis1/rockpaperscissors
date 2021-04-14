@@ -1,0 +1,137 @@
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.7;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+:focus {
+  outline-width: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container .title {
+  margin-bottom: 4rem;
+  margin-top: 3vh;
+}
+.container .title h1 {
+  font-size: 6rem;
+}
+.container .challenge-display {
+  margin-bottom: 3rem;
+  border: 0.1rem solid black;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.container .challenge-display img {
+  height: 11rem;
+  transition: 1s ease-in;
+}
+.container .challenge-display .versus {
+  font-size: 2rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+.container .challenge-win-lose {
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+.container .challenge-win-lose .you-won, .container .challenge-win-lose .you-lost, .container .challenge-win-lose .you-tied {
+  display: none;
+}
+.container .count {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.container .count .player {
+  font-size: 2rem;
+}
+.container .count .player .player-text {
+  color: blue;
+  font-weight: 600;
+}
+.container .count .computer {
+  font-size: 2rem;
+}
+.container .count .computer .computer-text {
+  color: red;
+}
+.container .count .player-wins {
+  font-size: 3rem;
+  color: blue;
+  display: none;
+}
+.container .count .player-loses {
+  font-size: 3rem;
+  color: red;
+  display: none;
+}
+.container .count .play-again {
+  cursor: pointer;
+  border: none;
+  padding: 2rem 5rem;
+  border-radius: 0.5rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  margin-top: 2rem;
+  display: none;
+}
+.container .challenge-choices {
+  margin-top: 6rem;
+}
+.container .challenge-choices .container {
+  display: flex;
+  flex-direction: row;
+}
+.container .challenge-choices .container img {
+  height: 15rem;
+}
+.container .challenge-choices .container .rock-choice, .container .challenge-choices .container .paper-choice, .container .challenge-choices .container .scissors-choice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4rem;
+}
+.container .challenge-choices .container .rock-choice button, .container .challenge-choices .container .paper-choice button, .container .challenge-choices .container .scissors-choice button {
+  margin-top: 3rem;
+  cursor: pointer;
+  border: none;
+  padding: 2rem 5rem;
+  border-radius: 0.5rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  margin-top: 5rem;
+}/*# sourceMappingURL=main.css.map */

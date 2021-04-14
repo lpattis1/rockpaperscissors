@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/main.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="title">
+            <h1>Rock, Paper, Scissors</h1>
+        </div>
+
+        <div class="challenge-display">
+            <div class="guess">
+                <img class="guess-one" src="/img/paper.png" alt="">
+            </div>
+
+            <div class="versus">VS</div>
+
+            <div class="answer">
+                <img class="guess-two" src="/img/scissors.png" alt="">
+            </div>
+        </div>
+
+        <div class="challenge-win-lose">
+            <span class="you-won">You won! 👍</span>
+            <span class="you-lost">You lost! 👎</span>
+            <span class="you-tied">Tied! 👌</span>
+        </div>
+
+        <div class="count">
+            <span class="player">
+                <span class="player-text">Player:</span>
+                <span class="player-count-text">0</span>
+            </span>
+            <span class="computer">
+                <span class="computer-text">Computer:</span>
+                <span class="computer-count-text">0</span>
+            </span>
+
+            <span class="player-wins">Player has won the game.</span>
+            <span class="player-loses">Computer has won the game.</span>
+            <button class="play-again">Play Again?</button>
+        </div>
+
+        <div class="challenge-choices">
+            <div class="container">
+
+                <!-- rock -->
+                <div class="rock-choice">
+                    <img src="/img/rock.png" alt="">
+                    <button class="rock" value="rock">Rock</button>
+                </div>
+
+                 <!-- paper -->
+                 <div class="paper-choice">
+                    <img src="/img/paper.png" alt="">
+                    <button class="paper" value="paper">Paper</button>
+                </div>
+
+                 <!-- scissors -->
+                 <div class="scissors-choice">
+                    <img src="/img/scissors.png" alt="">
+                    <button class="scissors" value="scissors">Scissors</button>
+                </div>
+
+            
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+</html>
